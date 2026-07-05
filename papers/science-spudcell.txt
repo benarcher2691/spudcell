@@ -1,0 +1,54 @@
+Title: Lab-created ‘SpudCell’ marks ‘stunning’ step toward building life from scratch
+
+URL Source: https://www.science.org/content/article/lab-created-spudcell-marks-major-step-toward-building-life-scratch
+
+Published Time: 2026-07-01T14:00:00.000Z
+
+Markdown Content:
+It’s just a microscopic water droplet surrounded by a fatty membrane and stuffed with chemicals and snippets of DNA encoding a mere 36 genes. But it’s also arguably the closest researchers have come to building a living cell from scratch. In work posted online today, University of Minnesota Twin Cities synthetic biologist Kate Adamala and her team show their creation, nicknamed SpudCell, [can grow by fusing with other droplets, replicate its genome, and divide](http://biotic.org/research/spudcell/).
+
+“This is a stunning scientific achievement,” says Roseanna Zia, a computational cell biologist at the University of Missouri. But researchers note that SpudCell remains far from a living cell, as it can’t divide over many generations or evolve.
+
+Some have also grumbled about Adamala’s efforts to draw attention to the work, which she says was rejected by _Cell_ after one reviewer said SpudCells were not real biology. She then sent the 190-page manuscript to journalists, under embargo, even before she had uploaded it to the preprint server bioRxiv, where her colleagues could read and assess it. She says her group will submit it to a new journal soon. “It’s an unusual way of doing things,” says Kerstin Göpfrich, a synthetic biologist at Heidelberg University.
+
+#### SIGN UP FOR THE AWARD-WINNING _SCIENCE_ ADVISER NEWSLETTER
+
+The latest news, commentary, and research, free to your inbox daily
+
+Researchers have long dreamed of creating cells in the lab, to both understand life’s fundamentals and produce cells that can be better engineered to make certain compounds. But most have set their sights lower and tried to replicate individual cell functions, such as feeding or growth. Putting multiple functions together has been extremely challenging, because each tends to work best under a different set of conditions, for instance a certain amount of magnesium or a specific level of acidity. “Being able to incorporate all of these modules together in a synthetic cell is the feat that the field has been waiting for,” says Job Boekhoven, a systems chemist at the Technical University of Munich, although he stresses that the new paper’s claims need to be peer reviewed.
+
+Progress
+
+1.0x
+
+Volume is at 50%
+
+00:00
+
+6:55
+
+1.0x
+
+Researchers seeking to build synthetic cells from the ground up have either used the existing molecules of life—DNA and fatty acids, for example—or developed synthetic building blocks. SpudCells take the former route, relying on the PURE system, developed decades ago: a kind of basic kit of the biomolecules, including proteins and ribosomes, needed to transcribe DNA into messenger RNA and translate RNA into proteins. Other researchers had put these building blocks into liposomes, essentially water droplets surrounded by fatty acids, to create systems with some of a cell’s basic functions, such as making proteins. “But [the droplets] were never able to feed and divide based on their genome,” Adamala says.
+
+Through clever engineering, her team designed SpudCell to do just that. They endowed its small genome, 50 times smaller than that of a typical bacterium, with genes that enable SpudCell to produce special molecular tags and present them on the surface of the droplet. There they act as attachment points for feeder vesicles, smaller liposomes that contain enzymes and other molecules the core droplet needs. Those “meals” enable SpudCells to grow and replicate their genome.
+
+In a second step, the researchers encoded in SpudCell’s genome a mechanism for the droplets to divide: another type of surface tag, called FLAG, that can bind to a large molecule known as streptavidin. The binding generates repulsion among the surface molecules; when enough streptavidin is added to the medium, the force can essentially break the droplet apart into two. “It’s as dumb as it gets,” Adamala says.
+
+The division process is very inefficient, Adamala admits. To get multiple rounds of division, the researchers had to mechanically split SpudCells by pressing them through a membrane with tiny holes. Doing this several times revealed another issue: Because the replicated genomes don’t neatly separate during division, only 30% of SpudCells carried the full genome after five division cycles.
+
+The complex machinery that makes proteins, the ribosome, also degrades over time in a SpudCell and there is no way for the system to make new ribosomes or get rid of old ones. Still, the SpudCell is “a catalyzing moment,” says Drew Endy, a synthetic biologist at Stanford University. “It proves that by putting four or five different things together from disparate academic accomplishments, you can just barely get this thing growing and dividing.”
+
+Adamala’s colleagues originally wanted to name the lab’s creation after her. “Call it something that’s not my name, call it a potato for all I care,” she says she told them. SpudCell stuck—and the echo of Sputnik is welcome, Adamala says.
+
+Because SpudCell’s components are well understood, Adamala says, biologists should be able to gradually improve it. “It’s inefficient, but you know exactly how it’s built,” she says. In contrast, she says, synthetic biologists seeking to modify existing cells for other purposes are hamstrung by a lack of knowledge. Whereas her cells resemble the Wright brothers’ first plane, she says, researchers starting with real cells are “like an engineer that’s given a full Dreamliner without all the plans.”
+
+Although SpudCells don’t yet have life’s ability to evolve, one of Adamala’s experiments points in that direction: She inserted a genetic mutation in some SpudCells that leads them to produce more surface tags for feeder vesicles, ingest more “food,” and grow faster. Indeed, the mutated SpudCells outcompeted the nonmutated versions. After five rounds of growth and division, about 60% of the genomes carried the mutation. Still, it wasn’t natural Darwinian evolution because the researchers inserted the mutation and they had to mechanically divide the cells. “It’s a very cool paper,” says Seraphine Wegner, a researcher at the University of Münster. “But I don’t think it means we’re close to creating a fully synthetic cell.”
+
+Endy nonetheless thinks SpudCells represent a dramatic advance. When he first saw the results more than a year ago, he began to approach government and philanthropic funders to finance an ambitious push to make true synthetic cells a reality. Along with Adamala and two other researchers, Endy ended up founding a public-benefit research institution named Biotic that they hope will coordinate disparate research groups and speed up that work. So far, the organization has seed money “on the order of 
+
+$10 million,” Endy says, and it will disburse most of that as research grants in September.
+
+Endy approves of Adamala’s approach to publicizing her paper. “It doesn’t surprise me that some colleagues would be not totally happy with what she’s doing,” he says. “I think Kate’s being quite courageous, and I think she’s giving everybody a gift. It’d be a lot easier for her to hold this close.”
+
+Getting the research out quickly, even without peer review, was important to jump-start the synthetic cell effort, Adamala says. “This is like the spark.”

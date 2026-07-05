@@ -1,0 +1,5 @@
+# Python virtualenv used only to extract PDF text
+papers/.venv/
+
+# OS cruft
+.DS_Store

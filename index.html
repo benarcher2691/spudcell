@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpudCell — Development Status Report</title>
+<meta name="description" content="Status report on SpudCell, the first bottom-up synthetic cell shown to run a complete cell cycle.">
+<style>
+  :root{
+    --bg:#0b1017; --card:#161d2a; --card2:#1c2431; --ink:#eef2f8; --muted:#9aa7b8;
+    --line:#28313f; --gold:#f2c14e; --dna:#3987e5; --feeder:#2bb98a; --good:#0ca30c; --crit:#d03b3b; --membrane:#d95926;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:radial-gradient(1100px 700px at 82% -8%,rgba(242,193,78,.10),transparent 60%),
+               radial-gradient(900px 600px at 5% 108%,rgba(57,135,229,.12),transparent 55%),var(--bg);
+    color:var(--ink); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:820px;margin:0 auto;padding:5rem 1.5rem 6rem}
+  .kicker{color:var(--gold);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;margin-bottom:1rem}
+  h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.02;letter-spacing:-.03em}
+  h1 .em{color:var(--gold)}
+  .lede{color:var(--muted);font-size:clamp(1.05rem,2vw,1.3rem);margin-top:1.2rem;max-width:60ch}
+  .meta{color:var(--muted);font-size:.85rem;margin-top:1rem}
+  .cta{display:flex;gap:.8rem;flex-wrap:wrap;margin:2rem 0 1rem}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.15rem;border-radius:10px;text-decoration:none;font-weight:600;font-size:.95rem;border:1px solid var(--line);transition:.18s}
+  .btn.primary{background:linear-gradient(180deg,#f4cd6b,#e4ad2f);color:#241a02;border-color:transparent}
+  .btn.primary:hover{transform:translateY(-2px)}
+  .btn.ghost{color:var(--ink);background:var(--card2)}
+  .btn.ghost:hover{border-color:var(--gold);color:var(--gold)}
+  hr{border:none;border-top:1px solid var(--line);margin:2.5rem 0}
+  h2{font-size:clamp(1.3rem,3vw,1.8rem);letter-spacing:-.01em;margin:2.6rem 0 1rem;padding-top:.4rem}
+  h3{font-size:1.05rem;color:var(--gold);margin:1.6rem 0 .6rem}
+  p{margin:.7rem 0;color:#d6dde7}
+  strong{color:var(--ink)}
+  ul{margin:.6rem 0 .6rem 0;padding-left:0;list-style:none}
+  li{position:relative;padding-left:1.5rem;margin:.5rem 0;color:#d6dde7}
+  li::before{content:"";position:absolute;left:.1rem;top:.62em;width:.45rem;height:.45rem;border-radius:2px;background:var(--gold)}
+  li.ok::before{background:var(--good);border-radius:50%}
+  li.no::before{background:var(--crit);border-radius:50%}
+  .card{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:14px;padding:1.3rem 1.5rem;margin:1.2rem 0}
+  .tldr{border-left:3px solid var(--gold)}
+  table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.92rem}
+  td,th{padding:.6rem .8rem;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--gold);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}
+  .pill{font-size:.7rem;padding:.1rem .5rem;border-radius:999px;background:rgba(12,163,12,.16);color:#3ed23e;border:1px solid rgba(12,163,12,.35);white-space:nowrap}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+  @media(max-width:680px){.cols{grid-template-columns:1fr}}
+  a.src{color:var(--dna);text-decoration:none;border-bottom:1px solid rgba(57,135,229,.3)}
+  a.src:hover{border-color:var(--dna)}
+  .foot{margin-top:3rem;color:var(--muted);font-size:.8rem;border-top:1px solid var(--line);padding-top:1.2rem}
+  code{background:var(--card2);border:1px solid var(--line);border-radius:5px;padding:.1rem .4rem;font-size:.85em}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">Status Briefing · 4 July 2026</div>
+  <h1>Spud<span class="em">Cell</span> — Development Status</h1>
+  <p class="lede">The first <strong>bottom-up synthetic cell</strong> shown to run a complete cell cycle — feeding, growth, genome replication, and division — built entirely from chemically defined, non-living components.</p>
+  <p class="meta">Kate Adamala Lab · University of Minnesota Twin Cities · Preprint released 1 July 2026</p>
+
+  <div class="cta">
+    <a class="btn primary" href="SpudCell-slides.html">▶ View the slide deck</a>
+    <a class="btn ghost" href="papers/spudcell-manuscript.pdf">📄 Primary manuscript (PDF)</a>
+    <a class="btn ghost" href="SpudCell-status-report.md">⤓ Report (Markdown)</a>
+  </div>
+
+  <div class="card tldr">
+    <h3 style="margin-top:0">TL;DR</h3>
+    <p>SpudCell is the closest anyone has come to building a living cell from scratch — a fatty droplet holding a defined ~90 kb genome (~36 genes) that can feed, grow, copy its genome, and divide. But it is <strong>not alive</strong> and <strong>not yet peer-reviewed</strong>: it can't make its own ribosomes, regulate metabolism, or clear waste, and it was released as a preprint after a rejection from <em>Cell</em>. Reactions range from "stunning breakthrough" to firm caution.</p>
+  </div>
+
+  <h2>1 · What SpudCell is</h2>
+  <ul>
+    <li>A <strong>synthetic minimal cell</strong>: liposomes (~µm fatty droplets) holding a defined genome plus a cell-free protein-expression system.</li>
+    <li>Built <strong>bottom-up</strong> — every component known — rather than by stripping down a natural organism (the top-down approach Craig Venter used in 2010).</li>
+    <li>Genome: <strong>~90 kbp across seven plasmids</strong>, roughly <strong>50× smaller than a bacterium</strong>; news coverage summarizes this as <strong>~36 genes</strong>, from <em>E. coli</em> and viral sources (notably the Phi29 replicase).</li>
+    <li>Runs on the <strong>PURE</strong> system (Protein synthesis Using Recombinant Elements) encapsulated inside the liposomes.</li>
+    <li><strong>Name:</strong> coined to evoke <em>Sputnik</em>; Adamala also jokes, "I'm Polish… I'm mostly made of potatoes."</li>
+  </ul>
+
+  <h2>2 · Who is behind it</h2>
+  <ul>
+    <li><strong>Lead:</strong> Dr. Katarzyna (Kate) P. Adamala, University of Minnesota Twin Cities.</li>
+    <li><strong>Manuscript authors:</strong> Gaut, Deich, Cash, Hoog, Engelhart, Adamala — a 190-page manuscript representing ~5 researcher-years.</li>
+    <li><strong>Biotic:</strong> a new public-benefit research institute co-founded by Adamala, Stanford's Drew Endy, and two others. Seed funding ~$10M; first grants expected September 2026. Endy's framing: build "an operating system for life."</li>
+  </ul>
+
+  <h2>3 · What has been demonstrated</h2>
+  <table>
+    <tr><th>Function</th><th>Mechanism</th><th></th></tr>
+    <tr><td>Feeding / growth</td><td>Genetically encoded fusion: modified α-hemolysin displays a His-tag; Ni-NTA "feeder" vesicles bind and fuse, delivering lipids, enzymes, ribosomes</td><td><span class="pill">shown</span></td></tr>
+    <tr><td>Genome replication</td><td>Phi29 replicase; rolling-circle amplification (TTcDR)</td><td><span class="pill">shown</span></td></tr>
+    <tr><td>Division</td><td>FLAG tag + streptavidin repulsion splits the droplet; also mechanical extrusion</td><td><span class="pill">shown</span></td></tr>
+    <tr><td>Selection</td><td>A growth-boosting mutation outcompeted originals (~60% of genomes after 5 rounds)</td><td><span class="pill">shown</span></td></tr>
+  </table>
+  <p>The long-standing hurdle it clears is <strong>coupling growth and division to gene expression</strong> — hard because each function tends to need different conditions (magnesium, pH).</p>
+
+  <h2>4 · What it cannot do</h2>
+  <div class="cols">
+    <ul>
+      <li class="no">Cannot make its own ribosomes — they degrade with no replacement</li>
+      <li class="no">Cannot regulate metabolism or clear waste</li>
+      <li class="no">Wholly dependent on a nutrient-rich medium (ATP) and feeder vesicles</li>
+    </ul>
+    <ul>
+      <li class="no">Division inefficient — only ~30% keep the full genome after 5 cycles</li>
+      <li class="no">"Conks out" after a few generations</li>
+      <li class="no">Not true Darwinian evolution — the mutation was inserted by hand; no cytoskeleton</li>
+    </ul>
+  </div>
+  <p>Adamala's framing: <em>"It is not as robust, as fast, or as good at most of its functions as a natural cell, but it is proof of principle."</em></p>
+
+  <h2>5 · Publication status &amp; controversy</h2>
+  <ul>
+    <li><strong>Not yet peer-reviewed</strong> — released as a preprint for open scrutiny.</li>
+    <li>The manuscript was <strong>rejected by <em>Cell</em></strong>, where one reviewer argued SpudCells "were not real biology."</li>
+    <li>Adamala then sent the 190-page manuscript to journalists under embargo, in some cases ahead of bioRxiv — an unusual sequence that drew criticism. The group says it will submit to a new journal soon.</li>
+    <li>Her rationale: <em>"This is like the spark"</em> — releasing fast to jump-start a coordinated field.</li>
+  </ul>
+
+  <h2>6 · How the field is reacting</h2>
+  <div class="cols">
+    <div>
+      <h3 style="color:var(--good)">Supportive</h3>
+      <ul>
+        <li class="ok"><strong>Roseanna Zia</strong> (Missouri): "a stunning scientific achievement."</li>
+        <li class="ok"><strong>Job Boekhoven</strong> (TU Munich): "the feat the field has been waiting for."</li>
+        <li class="ok"><strong>Drew Endy</strong> (Stanford): "a catalyzing moment."</li>
+        <li class="ok"><strong>Tom Ellis</strong> (Imperial): "biggest breakthrough in recent times."</li>
+      </ul>
+    </div>
+    <div>
+      <h3 style="color:var(--crit)">Cautious / critical</h3>
+      <ul>
+        <li class="no"><strong>Seraphine Wegner</strong> (Münster): "cool, but not close to a fully synthetic cell."</li>
+        <li class="no"><strong>Kerstin Göpfrich</strong> (Heidelberg): critical of the publicity-first rollout.</li>
+        <li class="no"><strong>John Dupré</strong> (Exeter): questions the practical point and the missing "relational" side of life.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>7 · Significance &amp; where it's headed</h2>
+  <p><strong>Why it matters:</strong> the first fully defined, non-living-origin cell to couple growth and division to gene expression — offering both a fully understood <strong>chassis</strong> for engineering biology (drugs, foods, fuels, materials) and a window into the <strong>minimum requirements for life</strong>.</p>
+  <p><strong>Next steps</strong> (per the manuscript &amp; Biotic): more robust, higher-yield, controllable division; a route toward a synthetic cytoskeleton; coupling growth + division + spontaneous mutation into genuine Darwinian evolution; and metabolic self-sufficiency (self-made ribosomes).</p>
+
+  <hr>
+  <h2>Sources</h2>
+  <ul>
+    <li><strong>Manuscript:</strong> Gaut, Deich, Cash, Hoog, Engelhart, Adamala — "A Chemically Defined Synthetic Cell Capable of Growth and Replication" (preprint, 190 pp.) — <a class="src" href="papers/spudcell-manuscript.pdf">PDF</a></li>
+    <li><em>Science</em>, Kai Kupferschmidt, 1 Jul 2026 — "Lab-created 'SpudCell' marks 'stunning' step toward building life from scratch"</li>
+    <li><em>The Guardian</em>, Ian Sample, 1 Jul 2026 — "'Beautiful blobs': synthetic life a step closer…"</li>
+    <li><em>New York Times</em>, Carl Zimmer &amp; Marco Hernandez, 1 Jul 2026 — "This Cell Feeds, Grows and Reproduces. And It's Manmade"</li>
+    <li><a class="src" href="https://en.wikipedia.org/wiki/SpudCell">Wikipedia: SpudCell</a> · also <em>The Economist</em>, 1 Jul 2026</li>
+  </ul>
+
+  <p class="foot">Compiled 4 July 2026 from the primary preprint and press coverage (archived in <code>./papers/</code>). Full write-up in <a class="src" href="SpudCell-status-report.md">SpudCell-status-report.md</a>.</p>
+
+</div>
+</body>
+</html>
