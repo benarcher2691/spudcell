@@ -125,8 +125,7 @@
   }
 </style>
 <script>
-  (function(){var t=localStorage.getItem('spud-theme');
-   if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
+  (function(){var t=localStorage.getItem('spud-theme')||'light';
    document.documentElement.setAttribute('data-theme',t);})();
 </script>
 </head>
