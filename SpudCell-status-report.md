@@ -73,6 +73,8 @@ SpudCell is the first **bottom-up synthetic (artificial) cell** shown to run a *
 
 *Added 2026-08-28. Nothing below changes the science: the preprint is still v1 on bioRxiv (posted 2 Jul), with no journal version or revision yet.*
 
+- **Peer review underway** — Biotic's FAQ states the work is "being released as a preprint, with peer review underway at a journal" — journal unnamed, no timeline given. It also notes the authors discussed the work with field experts and refined the paper in response ahead of release.
+- **Biotic FAQ adds technical color** — one generation takes **~12 hours at 30 °C** with regular feeding (five generations run; *E. coli* divides every 20–30 min); Biotic names **five open engineering challenges** between SpudCell and a dependable engineering substrate: consolidating the genome into a single stably inherited form, strengthening protein/energy systems, making genetically-encoded division dependable, engineering the ribosome from defined components (**"ribogenesis"**), and integrating bottom-up safety and security. It also details why SpudCell can't survive outside the lab and argues misuse risk is remote.
 - **Biotic launch essay** — "Out of One, Many," on biotic.org (Jul 2026). Names the next goal a **"Liberty Cell"** that makes its own parts and sustains itself; confirms **CellOS** as the flagship project; notes SpudCell's plasmids descend from DNA modules shared on **Addgene** almost a decade ago; and cites a **state-backed Shenzhen effort spanning 100+ labs** with a ten-year roadmap toward the same destination as a reason to build in the open. Names the four founders in full: **Adamala, Endy, Jedryszek, Raggio**.
 - **Biotic kick-off event — "Bloomsday 2026"** — **10 Sep 2026**, Science History Institute, Philadelphia. Full programme published: Endy on "The Biotic Future," Adamala on "Why Synthetic Cells Matter," sessions on biosecurity, ethics, and governance, and a conversation with the four founders.
 - **Provisional patent filed** — disclosed on the bioRxiv abstract page ("Provisional patent application has been filed"); the July sources didn't mention IP.
@@ -93,4 +95,5 @@ SpudCell is the first **bottom-up synthetic (artificial) cell** shown to run a *
 - **`quanta-spudcell.html`** — "For the First Time, a Cell Built From Scratch Grows and Divides," *Quanta Magazine*, 1 Jul 2026.
 - **`biotic-out-of-one-many.html`** — Biotic, "Out of One, Many," launch essay, biotic.org (Jul 2026).
 - **`biotic-bloomsday-2026.html`** — Biotic kick-off event page, "Bloomsday 2026," Science History Institute, Philadelphia, 10 Sep 2026.
+- **`biotic-faq.html`** — Biotic, "FAQ" (SpudCell + Biotic sections), biotic.org, snapshot 28 Aug 2026.
 - Additional coverage: *The Economist*, "Scientists have built a cell from the ground up," 1 Jul 2026; *New Scientist* (1 Jul) and STAT (1 Jul), both paywalled; SingularityHub, 9 Jul 2026; Science in Poland, 24 Jul 2026.
