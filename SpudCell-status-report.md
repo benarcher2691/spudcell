@@ -1,6 +1,6 @@
 # SpudCell — Development Status Report
 
-*Prepared 2026-07-04 · Updated 2026-08-28 · Sources: primary preprint manuscript + Wikipedia, Science, and The Guardian coverage (all archived in `./papers/`)*
+*Prepared 2026-07-04 · Updated 2026-10-11 · Sources: primary preprint manuscript + Wikipedia, Science, and The Guardian coverage (all archived in `./papers/`)*
 
 ## TL;DR
 
@@ -22,6 +22,7 @@ SpudCell is the first **bottom-up synthetic (artificial) cell** shown to run a *
 - **Manuscript authors:** Nathaniel J. Gaut, Christopher Deich, Brock Cash, Tanner Hoog, Aaron E. Engelhart, Katarzyna P. Adamala.
 - **Manuscript:** *"A Chemically Defined Synthetic Cell Capable of Growth and Replication"* — 190 pages, ~5 researcher-years of effort.
 - **New institution — Biotic:** a public-benefit research organization co-founded by Adamala, Stanford bioengineer **Drew Endy**, and two others, to coordinate synthetic-cell research globally. Seed funding **~$10M**; first grants expected **September 2026**. Endy frames the goal as building "an operating system for life."
+- **Licensing:** Biotic will license the core SpudCell technology — **free for academics and nonprofits, fees for commercial use** (Adamala, via CNN). Though US-based, Biotic says it will soon support work in **Japan, the UK, France, Germany, and the Netherlands** (Hoover interview).
 
 ## 3. What has been demonstrated (the cell cycle)
 
@@ -71,16 +72,25 @@ SpudCell is the first **bottom-up synthetic (artificial) cell** shown to run a *
 
 ## 8. Developments since July 2026
 
-*Added 2026-08-28. Nothing below changes the science: the preprint is still v1 on bioRxiv (posted 2 Jul), with no journal version or revision yet.*
+*Added 2026-08-28, extended 2026-10-11. Nothing below changes the science: as of 28 Aug the preprint was still v1 on bioRxiv (posted 2 Jul); no journal version or revision has been reported since (bioRxiv itself blocked automated checks on 11 Oct).*
+
+**Since 28 Aug**
+
+- **Bloomsday held as planned** (10 Sep, Philadelphia). The only write-up so far is Yelena Biberman's "Soon Enough to Matter" (*Bioinsecurity* Substack, 15 Sep). It names the safety & security panel: moderator **Kenneth Oye** (MIT), with **Tom Inglesby** (Johns Hopkins Center for Health Security), **John Glass** (J. Craig Venter Institute), **Sam Evans**, and Biberman. Biotic has posted no recap or recordings.
+- **No Biotic grant announcement yet**, despite the September target. biotic.org's only dated post is still the 2 Jul launch essay.
+- **Wikipedia** — the SpudCell article saw only cleanup in September (reference fixes, a maintenance tag, two reverted edits). No substantive change.
+
+**July–August**
 
 - **Peer review underway** — Biotic's FAQ states the work is "being released as a preprint, with peer review underway at a journal" — journal unnamed, no timeline given. It also notes the authors discussed the work with field experts and refined the paper in response ahead of release.
 - **Biotic FAQ adds technical color** — one generation takes **~12 hours at 30 °C** with regular feeding (five generations run; *E. coli* divides every 20–30 min); Biotic names **five open engineering challenges** between SpudCell and a dependable engineering substrate: consolidating the genome into a single stably inherited form, strengthening protein/energy systems, making genetically-encoded division dependable, engineering the ribosome from defined components (**"ribogenesis"**), and integrating bottom-up safety and security. It also details why SpudCell can't survive outside the lab and argues misuse risk is remote.
 - **Biotic launch essay** — "Out of One, Many," on biotic.org (Jul 2026). Names the next goal a **"Liberty Cell"** that makes its own parts and sustains itself; confirms **CellOS** as the flagship project; notes SpudCell's plasmids descend from DNA modules shared on **Addgene** almost a decade ago; and cites a **state-backed Shenzhen effort spanning 100+ labs** with a ten-year roadmap toward the same destination as a reason to build in the open. Names the four founders in full: **Adamala, Endy, Jedryszek, Raggio**.
+- **Hoover Institution founders' interview** — "Building Cells, Building a Field" (1 Jul), with all four founders. Adamala first showed Endy the SpudCell result **in confidence at the Build-a-Cell workshop at Stanford in spring 2025**. Endy places SpudCell in a near-decade collaboration with Richard Murray (Caltech), John Glass (JCVI), Elizabeth Strychalski (NIST), and Lynn Rothschild (NASA). He also cites the **May 2026 roadmap from China's SynCell Asia Initiative**, which calls for a centralized, AI-driven biofoundry in Shenzhen.
 - **Biotic kick-off event — "Bloomsday 2026"** — **10 Sep 2026**, Science History Institute, Philadelphia. Full programme published: Endy on "The Biotic Future," Adamala on "Why Synthetic Cells Matter," sessions on biosecurity, ethics, and governance, and a conversation with the four founders.
 - **Provisional patent filed** — disclosed on the bioRxiv abstract page ("Provisional patent application has been filed"); the July sources didn't mention IP.
 - **Open release** — SpudCell was released "openly, in full" at launch: preprint, manuscript, and protocols (biotic.org/protocols) rather than held behind journal publication.
 - **Wikipedia article created** — <https://en.wikipedia.org/wiki/SpudCell>, last edited 21 Jul 2026 (English + Arabic). Carefully framed: describes claims as "claimed," notes no peer-reviewed publication.
-- **Later coverage** — *Quanta*, "For the First Time, a Cell Built From Scratch Grows and Divides" (1 Jul); *New Scientist*, "What is 'SpudCell'?" (1 Jul, paywalled); STAT, "Synthetic biology researchers think they've made a cell. Is it alive?" (1 Jul, paywalled); SingularityHub (9 Jul); Science in Poland, "Polish researcher's team first to build synthetic cell from scratch" (24 Jul) — profile, no new science.
+- **Later coverage** — *Quanta*, "For the First Time, a Cell Built From Scratch Grows and Divides" (1 Jul); *New Scientist*, "What is 'SpudCell'?" (1 Jul, paywalled); STAT, "Synthetic biology researchers think they've made a cell. Is it alive?" (1 Jul, paywalled); CNN, "Scientists say they have made a cell from scratch for first time" (1 Jul; source of the licensing terms, plus ethicist Laurie Zoloth on Biotic's governance); SingularityHub (9 Jul); *The Scientist*, "Meet SpudCell" (12 Jul); *Science News*, "No, the 'first synthetic life' isn't alive" (17 Jul, updated 25 Aug); *Lab Manager* (22 Jul); Science in Poland, "Polish researcher's team first to build synthetic cell from scratch" (24 Jul) — profile, no new science.
 - **Correction watch** — biotic.org's SpudCell overview says the 90 kbp genome is spread across "**nine** separate DNA molecules," contradicting its own architecture section and the manuscript (**seven plasmids**). Treat "nine" as their typo.
 
 ---
@@ -96,4 +106,11 @@ SpudCell is the first **bottom-up synthetic (artificial) cell** shown to run a *
 - **`biotic-out-of-one-many.html`** — Biotic, "Out of One, Many," launch essay, biotic.org (Jul 2026).
 - **`biotic-bloomsday-2026.html`** — Biotic kick-off event page, "Bloomsday 2026," Science History Institute, Philadelphia, 10 Sep 2026.
 - **`biotic-faq.html`** — Biotic, "FAQ" (SpudCell + Biotic sections), biotic.org, snapshot 28 Aug 2026.
+- **`hoover-building-cells.html`** — Endy et al., "Building Cells, Building a Field," Hoover Institution, 1 Jul 2026.
+- **`cnn-spudcell.html`** — "Scientists say they have made a cell from scratch for first time," CNN, 1 Jul 2026.
+- **`the-scientist-spudcell.html`** — "Meet SpudCell: The First Synthetic Cell Built from Non-Living Parts," *The Scientist*, 12 Jul 2026.
+- **`sciencenews-spudcell.html`** — "No, the 'first synthetic life' isn't alive," *Science News*, 17 Jul 2026 (updated 25 Aug).
+- **`labmanager-spudcell.html`** — "SpudCell Synthetic Cell Grows, Replicates DNA, and Divides," *Lab Manager*, 22 Jul 2026.
+- **`bioinsecurity-soon-enough-to-matter.html`** — Yelena Biberman, "Soon Enough to Matter," *Bioinsecurity* (Substack), 15 Sep 2026.
+- Not archived: UMN press release, "World's first synthetic cell with a complete life cycle could revolutionize biological engineering" (twin-cities.umn.edu; blocked by a Cloudflare bot check).
 - Additional coverage: *The Economist*, "Scientists have built a cell from the ground up," 1 Jul 2026; *New Scientist* (1 Jul) and STAT (1 Jul), both paywalled; SingularityHub, 9 Jul 2026; Science in Poland, 24 Jul 2026.
